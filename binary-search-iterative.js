@@ -18,6 +18,10 @@ export class Solution {
   
       while (start + 1 < end) {
           const mid = Math.floor((start + end) / 2);
+
+          if (nums[mid] === target) {
+            return mid;
+        }
   
           if (nums[mid] < target) {
               start = mid;
